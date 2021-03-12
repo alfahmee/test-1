@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login Form</title>
+        <title>Search Book</title>
     </head>
     <body>
 
@@ -145,7 +145,7 @@
             <fieldset>
                 <legend><b>Search Book</b></legend>
             
-                <label for="bookName">Book Id:</label>
+                <label for="bookName">Book Name:</label>
                 <input type="text" name="bName" id="bookName">
                 <?php echo $bookNameerr; ?>
                 

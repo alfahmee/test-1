@@ -92,6 +92,11 @@
 
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
 
+
+
+    	    <fieldset>
+                <legend><b>Request for Book</b></legend>
+
     
     
 
@@ -124,6 +129,9 @@
         <input type="text" name="edition" id="edition" value="<?php echo $edition ?>">
         <p><?php echo $editionErr; ?></p>
         <br>
+
+
+          </fieldset>
        
         
     

@@ -18,15 +18,5 @@
         "bookName": "Java",
         "bid": 100,
         "bprice": "300"
-    },
-    {
-        "bookName": "Java",
-        "bid": 100,
-        "bprice": "300"
-    },
-    {
-        "bookName": "Java",
-        "bid": 100,
-        "bprice": "300"
     }
 ]

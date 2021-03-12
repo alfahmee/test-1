@@ -6,7 +6,7 @@
         "bpublisher": "Prentice",
         "bedition": "11th",
         "bprice": "300",
-        "bquantity": 6
+        "bquantity": 4
     },
     {
         "bookName": "Java 1",

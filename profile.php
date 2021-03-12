@@ -56,34 +56,68 @@
                 unset($_SESSION['user']); 
                 header('Location: login.php');
                 }
+                ?>
 
-
+            <?php
 
                 if($_SERVER['REQUEST_METHOD'] == "POST" && $_REQUEST['button'] == "Dashboard") {
               
-                header('Location: dashboard.php');
+                header('Location: dashboard.php');}
+
+                 ?>
 
 
-                 if($_SERVER['REQUEST_METHOD'] == "POST" && $_REQUEST['button'] == "searchbook") {
+                 <?php
+
+                 if($_SERVER['REQUEST_METHOD'] == "POST" && $_REQUEST['button'] == "Search Book for AddToCart") {
               
                 header('Location: searchbook.php');
                 }
-                }
+                
         ?>
 
         <?php
-            if($_SERVER['REQUEST_METHOD'] == "POST" && $_REQUEST['button'] == "CartView") {
-                unset($_SESSION['user']); 
+            if($_SERVER['REQUEST_METHOD'] == "POST" && $_REQUEST['button'] == "CartView for Buy") {
+                
                 header('Location: ViewCart.php');
+                }
+
+        ?>
+
+          <?php
+            if($_SERVER['REQUEST_METHOD'] == "POST" && $_REQUEST['button'] == "Request For Book") {
+           
+                header('Location: brequest.php');
+                }
+
+        ?>
+
+         <?php
+            if($_SERVER['REQUEST_METHOD'] == "POST" && $_REQUEST['button'] == "Track order") {
+                
+                header('Location: trackorder.php');
+                }
+
+        ?>
+
+
+        <?php
+            if($_SERVER['REQUEST_METHOD'] == "POST" && $_REQUEST['button'] == "Order History") {
+            
+                header('Location: orderhistory.php');
                 }
 
         ?>
         
         <form  action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
-            <input type="submit" value="CartView" name= "button">
+            <input type="submit" value="CartView for Buy" name= "button">
             <input type="submit" value="My Order" name= "button">
-            <input type="submit" value="Logout" name= "button">
-            <input type="submit" value="searchbook" name= "button">
+            
+            <input type="submit" value="Search Book for AddToCart" name= "button">
+            <input type="submit" value="Request For Book" name= "button">
+             <input type="submit" value="Track order" name= "button">
+              <input type="submit" value="Order History" name= "button">
+             <input type="submit" value="Logout" name= "button">
         </form>
         </form>
 
@@ -124,7 +158,9 @@
 
             </fieldset>
 
-             <h5>Go to <a href="searchbook.php">Search Book</a></h5><br>
+             <h5>Go to <a href="searchbook.php">Search Book</a></h5>
+
+              <h5>Go to <a href="ViewCart.php">Cart List</a></h5>
 
               <h5>Go to  <a href="brequest.php">Request fot Book</a></h5>
         

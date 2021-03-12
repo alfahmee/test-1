@@ -1,8 +1,7 @@
  <!DOCTYPE html>
  <html>
  <head>
- 	<h3>View Cart</h3>>
-     <title>View Cart</title>
+     <title></title>
  </head>
  <body>
      <?php  

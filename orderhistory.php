@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
  <html>
  <head>
-     <title>Track Order</title>
+ 	<h3>Order History</h3>>
+     <title>Order History</title>
  </head>
  <body>
      <?php  
- $mydata=file_get_contents("trackorder.txt");
+ $mydata=file_get_contents("order.txt");
         $data=json_decode($mydata);
         $s= count($data);        
 
@@ -14,11 +16,11 @@
              echo "<fieldset>
 
 
-                <legend><b>Order Track:</b></legend>";
+                <legend><b>Book:</b></legend>";
 
              echo "Book Id : ".$data[$i]->bid."<br>";
              echo "Book Title : ".$data[$i]->bookName."<br>";
-             echo "Order Status : ".$data[$i]->ostatus."<br>";
+             echo "Book price : ".$data[$i]->bprice."<br>";
              echo "</fieldset>";
 
 
@@ -28,7 +30,6 @@
 
 
   
-
         
          <h5>Back to the <a href="profile.php">profile</a></h5>  
 

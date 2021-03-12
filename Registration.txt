@@ -8,3 +8,5 @@
 {"firstname":"d","lastname":"d","gender":"male","email":"afahmee.al@gmail.com","image":"Screenshot (9).png","location":"dhaka"}
 {"firstname":"w","lastname":"w","gender":"male","email":"wfahmee.al@gmail.com","image":"Screenshot (2).png","location":"dhaka","phone":"01794233952"}
 {"firstname":"f","lastname":"f","gender":"male","email":"qfahmee.al@gmail.com","image":"Screenshot (16).png","location":"dhaka","phone":"01794233952"}
+{"firstname":"Fahmee","lastname":"Fahmee","gender":"male","email":"lfahmee.al@gmail.com","image":"Screenshot (1).png","location":"dhaka","phone":"01794233952"}
+{"firstname":"zahid","lastname":"Loashan","gender":"male","email":"zzahid@gmail.com","image":"Screenshot (1).png","location":"dhaka","phone":"01794233952"}

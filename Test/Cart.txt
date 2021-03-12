@@ -1,0 +1,7 @@
+[
+    {
+        "bookName": "Java",
+        "bid": "100",
+        "bprice": "300"
+    }
+]

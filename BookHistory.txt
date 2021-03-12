@@ -1,0 +1,14 @@
+[
+    {
+        "bookName": "Java",
+        "bid": 100,
+        "bprice": "300",
+        "bquantity": 7
+    },
+    {
+        "bookName": "Java",
+        "bid": 100,
+        "bprice": "300",
+        "bquantity": 6
+    }
+]

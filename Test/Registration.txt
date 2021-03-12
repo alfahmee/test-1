@@ -1,0 +1,10 @@
+{"firstname":"Imrul","lastname":"Afnan","gender":"male","email":"imrul.afnan18@gmail.com","image":"a2.JPG","req_ques":"Best Friend?","req_ans":"Baba"}
+{"firstname":"Sayma","lastname":"Khanam","gender":"female","email":"sayma@gmail.com","image":"a2.JPG","req_ques":"Best frnd","req_ans":"Afnan"}
+{"firstname":"Zahid","lastname":"Hasan","gender":"male","email":"zahid@gmail.com","image":"a1.JPG","req_ques":"Nickname?","req_ans":"zazu"}
+{"firstname":"Imrul","lastname":"Afnan","gender":"male","email":"imrul.afnan@gmail.com","image":"asv.JPG","req_ques":"Nickname?","req_ans":"Af"}
+{"firstname":"a","lastname":"a","gender":"male","email":"fahmee.al@gmail.com","image":"Screenshot (17).png"}
+{"firstname":"f","lastname":"f","gender":"male","email":"aahmee.al@gmail.com","image":"Screenshot (8).png","location":"dhaka"}
+{"firstname":"a","lastname":"a","gender":"male","email":"qahmee.al@gmail.com","image":"Screenshot (1).png","location":"dhaka"}
+{"firstname":"d","lastname":"d","gender":"male","email":"afahmee.al@gmail.com","image":"Screenshot (9).png","location":"dhaka"}
+{"firstname":"w","lastname":"w","gender":"male","email":"wfahmee.al@gmail.com","image":"Screenshot (2).png","location":"dhaka","phone":"01794233952"}
+{"firstname":"f","lastname":"f","gender":"male","email":"qfahmee.al@gmail.com","image":"Screenshot (16).png","location":"dhaka","phone":"01794233952"}

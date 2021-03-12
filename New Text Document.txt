@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+    </head>
+    <body>
+        <?php
+
+            $bookName = "";
+            $bookNameerr = "";
+            $loginfail = "";
+
+            if($_SERVER['REQUEST_METHOD'] == "POST" && $_REQUEST['button'] == "Search") {
+
+                if(empty($_POST['bName'])) {                    
+                    $bookNameerr = "Please Fill up the Book Name!";
+                }
+
+               
+
+                else {
+                    $bookName = $_POST['bName'];
+                   
+
+                    $log_file = fopen("book.txt", "r");                    
+                    $data = fread($log_file, filesize("book.txt"));                    
+                    fclose($log_file);
+                    
+                    $data_filter = explode("\n", $data);
+                    
+                    for($i = 0; $i< count($data_filter)-1; $i++) {
+
+                        $json_decode = json_decode($data_filter[$i], true);
+                        if($json_decode['bookName'] == $bookName ) 
+                     {
+                         session_start();
+                          $_SESSION['book'] = $bookName;
+                          header("Location: vbook.php");
+                        }
+                    }
+                    $loginfail = "Book is not availebale.";
+                }
+            }
+        ?>
+        
+        <h1>Welcome to Digital E-Book</h1>
+        <form  action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="POST">
+
+            <fieldset>
+                <legend><b>Search Book</b></legend>
+            
+                <label for="bookName">Book Id:</label>
+                <input type="text" name="bName" id="bookName">
+                <?php echo $bookNameerr; ?>
+
+                
+                <br>
+
+               
+
+               
+                
+                </fieldset>
+
+                <?php echo $loginfail; ?>
+
+                <br>
+                
+            <input type="submit" value="Search" name="button"> 
+        </form>
+
+        <br>
+
+       
+
+       
+
+        
+    </body>
+</html>
